@@ -48,7 +48,10 @@ class PetResponder:
         self.vector_store: Optional[FAISSVectorStore] = None
 
         # Load pet data
-        self._pet = None
+        self._pet_name: str = ""
+        self._pet_species: str = ""
+        self._pet_breed: str = ""
+        self._pet_age: Optional[int] = None
         self._trait_vector: Optional[TraitVector] = None
         self._voice_profile: Optional[VoiceProfile] = None
         self._load_pet_data()
@@ -58,9 +61,15 @@ class PetResponder:
         with get_session() as session:
             repo = Repository(session)
 
-            self._pet = repo.get_pet(self.pet_id)
-            if not self._pet:
+            pet = repo.get_pet(self.pet_id)
+            if not pet:
                 raise ValueError(f"Pet not found: {self.pet_id}")
+
+            # Store pet attributes as plain values (avoid detached session issues)
+            self._pet_name = pet.name
+            self._pet_species = pet.species
+            self._pet_breed = pet.breed
+            self._pet_age = pet.age
 
             # Load current personality snapshot
             snapshot = repo.get_current_snapshot(self.pet_id)
@@ -75,7 +84,7 @@ class PetResponder:
             # Load documents into vector store
             self._load_documents(repo)
 
-        logger.info(f"Loaded responder for {self._pet.name} ({self._pet.species})")
+        logger.info(f"Loaded responder for {self._pet_name} ({self._pet_species})")
 
     def _load_documents(self, repo: Repository) -> None:
         """Load pet documents into vector store for retrieval."""
@@ -199,8 +208,8 @@ class PetResponder:
         This is the MVP rule-based generator. Can be swapped with
         an LLM-based implementation later.
         """
-        species = self._pet.species
-        name = self._pet.name
+        species = self._pet_species
+        name = self._pet_name
         vocab = VoiceTemplates.get_vocabulary(species)
 
         # Get top traits for personality

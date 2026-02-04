@@ -381,9 +381,10 @@ def chat(
             conv_session = repo.create_conversation_session(pet_id)
             session_id = conv_session.id
 
-    pet = responder._pet
+    pet_name = responder._pet_name
+    pet_breed = responder._pet_breed
     console.print(Panel(
-        f"Chatting with [bold]{pet.name}[/bold] the {pet.breed}\n"
+        f"Chatting with [bold]{pet_name}[/bold] the {pet_breed}\n"
         f"Type 'quit' or 'exit' to end the conversation.",
         title="Pet Chat"
     ))
@@ -396,7 +397,7 @@ def chat(
 
         if user_input.lower() in ("quit", "exit", "bye"):
             response = responder.respond("goodbye", session_id=session_id)
-            console.print(f"\n[bold green]{pet.name}:[/bold green] {response['response']}")
+            console.print(f"\n[bold green]{pet_name}:[/bold green] {response['response']}")
             break
 
         if not user_input.strip():
@@ -404,7 +405,7 @@ def chat(
 
         result = responder.respond(user_input, session_id=session_id, debug=debug)
 
-        console.print(f"\n[bold green]{pet.name}:[/bold green]{result['response']}")
+        console.print(f"\n[bold green]{pet_name}:[/bold green] {result['response']}")
 
         if debug and "evidence" in result:
             console.print(f"  [dim]Intent: {result.get('intent', 'unknown')}[/dim]")
@@ -454,9 +455,9 @@ def voice_chat(
         conv_session = repo.create_conversation_session(pet_id)
         session_id = conv_session.id
 
-    pet = responder._pet
+    pet_name = responder._pet_name
     console.print(Panel(
-        f"Voice chatting with [bold]{pet.name}[/bold]\n"
+        f"Voice chatting with [bold]{pet_name}[/bold]\n"
         f"Press Enter to record, or type 'quit' to exit.",
         title="Voice Chat"
     ))
@@ -488,7 +489,7 @@ def voice_chat(
         result = responder.respond(transcription, session_id=session_id, debug=debug)
         response_text = result["response"]
 
-        console.print(f"\n[bold green]{pet.name}:[/bold green]{response_text}")
+        console.print(f"\n[bold green]{pet_name}:[/bold green] {response_text}")
 
         # Speak response
         if tts and tts.is_available:

@@ -68,7 +68,7 @@ class WikipediaIngester:
         }
 
         try:
-            with httpx.Client(timeout=30.0) as client:
+            with httpx.Client(timeout=30.0, headers={"User-Agent": "PetPersonaAI/0.1 (https://github.com/alecwill/argos; pet personality project)"}) as client:
                 response = client.get(WIKIPEDIA_API_URL, params=params)
                 response.raise_for_status()
                 data = response.json()
