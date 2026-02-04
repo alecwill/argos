@@ -1,0 +1,272 @@
+{
+  "version": "1.0.0",
+  "description": "Pet personality traits catalog based on MIT Ideonomy trait list, adapted for cats and dogs",
+  "traits": [
+    {
+      "id": "active",
+      "name": "Active",
+      "description": "Energetic, enjoys physical activity and play",
+      "applies_to": ["dog", "cat"],
+      "opposite": "lazy"
+    },
+    {
+      "id": "affectionate",
+      "name": "Affectionate",
+      "description": "Shows love and warmth, enjoys physical contact",
+      "applies_to": ["dog", "cat"],
+      "opposite": "aloof"
+    },
+    {
+      "id": "aggressive",
+      "name": "Aggressive",
+      "description": "Shows hostility or forceful behavior",
+      "applies_to": ["dog", "cat"],
+      "opposite": "gentle"
+    },
+    {
+      "id": "alert",
+      "name": "Alert",
+      "description": "Watchful and quick to notice things",
+      "applies_to": ["dog", "cat"],
+      "opposite": "oblivious"
+    },
+    {
+      "id": "anxious",
+      "name": "Anxious",
+      "description": "Nervous, worried, prone to stress",
+      "applies_to": ["dog", "cat"],
+      "opposite": "calm"
+    },
+    {
+      "id": "bold",
+      "name": "Bold",
+      "description": "Confident and willing to take risks",
+      "applies_to": ["dog", "cat"],
+      "opposite": "timid"
+    },
+    {
+      "id": "calm",
+      "name": "Calm",
+      "description": "Peaceful, not easily agitated",
+      "applies_to": ["dog", "cat"],
+      "opposite": "anxious"
+    },
+    {
+      "id": "clever",
+      "name": "Clever",
+      "description": "Quick to learn and understand",
+      "applies_to": ["dog", "cat"],
+      "opposite": "slow"
+    },
+    {
+      "id": "curious",
+      "name": "Curious",
+      "description": "Eager to learn and explore",
+      "applies_to": ["dog", "cat"],
+      "opposite": "indifferent"
+    },
+    {
+      "id": "devoted",
+      "name": "Devoted",
+      "description": "Loyal and dedicated to their humans",
+      "applies_to": ["dog", "cat"],
+      "opposite": "independent"
+    },
+    {
+      "id": "docile",
+      "name": "Docile",
+      "description": "Easy to manage and train",
+      "applies_to": ["dog", "cat"],
+      "opposite": "stubborn"
+    },
+    {
+      "id": "energetic",
+      "name": "Energetic",
+      "description": "Full of energy and enthusiasm",
+      "applies_to": ["dog", "cat"],
+      "opposite": "lethargic"
+    },
+    {
+      "id": "friendly",
+      "name": "Friendly",
+      "description": "Warm and welcoming to others",
+      "applies_to": ["dog", "cat"],
+      "opposite": "unfriendly"
+    },
+    {
+      "id": "gentle",
+      "name": "Gentle",
+      "description": "Mild and careful in behavior",
+      "applies_to": ["dog", "cat"],
+      "opposite": "aggressive"
+    },
+    {
+      "id": "happy",
+      "name": "Happy",
+      "description": "Cheerful and content disposition",
+      "applies_to": ["dog", "cat"],
+      "opposite": "sad"
+    },
+    {
+      "id": "independent",
+      "name": "Independent",
+      "description": "Self-reliant, doesn't need constant attention",
+      "applies_to": ["dog", "cat"],
+      "opposite": "dependent"
+    },
+    {
+      "id": "intelligent",
+      "name": "Intelligent",
+      "description": "Smart and quick-witted",
+      "applies_to": ["dog", "cat"],
+      "opposite": "simple"
+    },
+    {
+      "id": "lazy",
+      "name": "Lazy",
+      "description": "Prefers rest over activity",
+      "applies_to": ["dog", "cat"],
+      "opposite": "active"
+    },
+    {
+      "id": "lively",
+      "name": "Lively",
+      "description": "Full of life and energy",
+      "applies_to": ["dog", "cat"],
+      "opposite": "dull"
+    },
+    {
+      "id": "loyal",
+      "name": "Loyal",
+      "description": "Faithful and steadfast",
+      "applies_to": ["dog", "cat"],
+      "opposite": "disloyal"
+    },
+    {
+      "id": "mischievous",
+      "name": "Mischievous",
+      "description": "Playfully naughty or troublemaking",
+      "applies_to": ["dog", "cat"],
+      "opposite": "well-behaved"
+    },
+    {
+      "id": "obedient",
+      "name": "Obedient",
+      "description": "Follows commands and rules well",
+      "applies_to": ["dog", "cat"],
+      "opposite": "disobedient"
+    },
+    {
+      "id": "patient",
+      "name": "Patient",
+      "description": "Able to wait calmly",
+      "applies_to": ["dog", "cat"],
+      "opposite": "impatient"
+    },
+    {
+      "id": "playful",
+      "name": "Playful",
+      "description": "Enjoys games and play",
+      "applies_to": ["dog", "cat"],
+      "opposite": "serious"
+    },
+    {
+      "id": "protective",
+      "name": "Protective",
+      "description": "Guards and defends their family",
+      "applies_to": ["dog", "cat"],
+      "opposite": "indifferent"
+    },
+    {
+      "id": "quiet",
+      "name": "Quiet",
+      "description": "Not prone to making noise",
+      "applies_to": ["dog", "cat"],
+      "opposite": "vocal"
+    },
+    {
+      "id": "reserved",
+      "name": "Reserved",
+      "description": "Holds back around strangers",
+      "applies_to": ["dog", "cat"],
+      "opposite": "outgoing"
+    },
+    {
+      "id": "sensitive",
+      "name": "Sensitive",
+      "description": "Easily affected by emotions and environment",
+      "applies_to": ["dog", "cat"],
+      "opposite": "tough"
+    },
+    {
+      "id": "shy",
+      "name": "Shy",
+      "description": "Timid around new people or situations",
+      "applies_to": ["dog", "cat"],
+      "opposite": "outgoing"
+    },
+    {
+      "id": "sociable",
+      "name": "Sociable",
+      "description": "Enjoys company of humans and other animals",
+      "applies_to": ["dog", "cat"],
+      "opposite": "antisocial"
+    },
+    {
+      "id": "stubborn",
+      "name": "Stubborn",
+      "description": "Determined to do things their own way",
+      "applies_to": ["dog", "cat"],
+      "opposite": "docile"
+    },
+    {
+      "id": "sweet",
+      "name": "Sweet",
+      "description": "Kind and pleasant natured",
+      "applies_to": ["dog", "cat"],
+      "opposite": "grumpy"
+    },
+    {
+      "id": "territorial",
+      "name": "Territorial",
+      "description": "Protective of their space",
+      "applies_to": ["dog", "cat"],
+      "opposite": "relaxed"
+    },
+    {
+      "id": "timid",
+      "name": "Timid",
+      "description": "Easily frightened",
+      "applies_to": ["dog", "cat"],
+      "opposite": "bold"
+    },
+    {
+      "id": "trainable",
+      "name": "Trainable",
+      "description": "Easy to teach new things",
+      "applies_to": ["dog", "cat"],
+      "opposite": "untrainable"
+    },
+    {
+      "id": "trusting",
+      "name": "Trusting",
+      "description": "Quick to trust others",
+      "applies_to": ["dog", "cat"],
+      "opposite": "suspicious"
+    },
+    {
+      "id": "vocal",
+      "name": "Vocal",
+      "description": "Expresses themselves through sounds",
+      "applies_to": ["dog", "cat"],
+      "opposite": "quiet"
+    },
+    {
+      "id": "watchful",
+      "name": "Watchful",
+      "description": "Keeps an eye on surroundings",
+      "applies_to": ["dog", "cat"],
+      "opposite": "unaware"
+    }
+  ]
+}

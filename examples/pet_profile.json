@@ -1,0 +1,75 @@
+{
+  "name": "Buddy",
+  "species": "dog",
+  "breed": "Golden Retriever",
+  "age": 3,
+  "sex": "male",
+  "questionnaire_responses": [
+    {
+      "question_id": "energy_level",
+      "question_text": "How would you describe your dog's energy level?",
+      "answer": "4",
+      "category": "energy"
+    },
+    {
+      "question_id": "playfulness",
+      "question_text": "How playful is your dog?",
+      "answer": "5",
+      "category": "energy"
+    },
+    {
+      "question_id": "stranger_reaction",
+      "question_text": "How does your dog react to strangers?",
+      "answer": "Very friendly",
+      "category": "social"
+    },
+    {
+      "question_id": "other_dogs",
+      "question_text": "How does your dog interact with other dogs?",
+      "answer": "Loves all dogs",
+      "category": "social"
+    },
+    {
+      "question_id": "alone_time",
+      "question_text": "How does your dog handle being alone?",
+      "answer": "Okay for moderate periods",
+      "category": "independence"
+    },
+    {
+      "question_id": "trainability",
+      "question_text": "How easy is your dog to train?",
+      "answer": "5",
+      "category": "trainability"
+    },
+    {
+      "question_id": "vocalization",
+      "question_text": "How vocal is your dog?",
+      "answer": "3",
+      "category": "vocalization"
+    },
+    {
+      "question_id": "affection",
+      "question_text": "How affectionate is your dog?",
+      "answer": "5",
+      "category": "temperament"
+    },
+    {
+      "question_id": "favorite_activities",
+      "question_text": "What are your dog's favorite activities?",
+      "answer": "Buddy loves playing fetch in the park, swimming in the lake, and going on long hikes. He also enjoys meeting new people and dogs.",
+      "category": "personality"
+    },
+    {
+      "question_id": "unique_quirks",
+      "question_text": "What unique quirks or behaviors does your dog have?",
+      "answer": "Buddy always brings his favorite toy to greet visitors. He does a happy dance when it's walk time. He's afraidof the vacuum cleaner.",
+      "category": "personality"
+    },
+    {
+      "question_id": "personality_description",
+      "question_text": "In your own words, describe your dog's personality:",
+      "answer": "Buddy is the friendliest dog you'll ever meet.He loves everyone and everything. He's always happy and eager to please. Very gentle with kids and other animals. He's smart and picks up new tricks quickly. A true golden retriever - loyal, loving, and always ready for an adventure.",
+      "category": "personality"
+    }
+  ]
+}

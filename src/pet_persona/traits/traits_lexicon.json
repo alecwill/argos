@@ -1,0 +1,196 @@
+{
+  "version": "1.0.0",
+  "description": "Lexicon mapping keywords and phrases to personality traits with weights",
+  "mappings": {
+    "active": {
+      "keywords": ["active", "energetic", "athletic", "vigorous", "dynamic", "sprightly"],
+      "phrases": ["loves to run", "needs exercise", "high energy", "always moving", "loves activities"],
+      "weight": 1.0
+    },
+    "affectionate": {
+      "keywords": ["affectionate", "loving", "cuddly", "warm","tender", "sweet"],
+      "phrases": ["loves to cuddle", "very loving", "enjoys petting", "seeks attention", "lap pet", "loves being held"],
+      "weight": 1.0
+    },
+    "aggressive": {
+      "keywords": ["aggressive", "hostile", "fierce", "combative", "ferocious"],
+      "phrases": ["can be aggressive", "may bite", "shows aggression", "not friendly", "resource guarding"],
+      "weight": 0.8
+    },
+    "alert": {
+      "keywords": ["alert", "watchful", "vigilant", "attentive", "aware", "keen"],
+      "phrases": ["always alert", "notices everything", "quickto react", "good watchdog"],
+      "weight": 1.0
+    },
+    "anxious": {
+      "keywords": ["anxious", "nervous", "worried", "stressed", "fearful", "uneasy"],
+      "phrases": ["separation anxiety", "easily stressed", "gets nervous", "prone to anxiety", "needs reassurance"],
+      "weight": 0.9
+    },
+    "bold": {
+      "keywords": ["bold", "brave", "courageous", "fearless", "daring", "confident"],
+      "phrases": ["very bold", "not afraid", "faces challenges", "stands ground", "no fear"],
+      "weight": 1.0
+    },
+    "calm": {
+      "keywords": ["calm", "relaxed", "tranquil", "peaceful", "serene", "placid", "mellow"],
+      "phrases": ["very calm", "laid back", "easy going", "noteasily upset", "relaxed demeanor"],
+      "weight": 1.0
+    },
+    "clever": {
+      "keywords": ["clever", "smart", "bright", "shrewd", "cunning", "quick-witted"],
+      "phrases": ["very clever", "figures things out", "problem solver", "learns quickly"],
+      "weight": 1.0
+    },
+    "curious": {
+      "keywords": ["curious", "inquisitive", "nosy", "interested", "exploratory"],
+      "phrases": ["very curious", "loves exploring", "investigates everything", "into everything"],
+      "weight": 1.0
+    },
+    "devoted": {
+      "keywords": ["devoted", "dedicated", "committed", "faithful", "loyal"],
+      "phrases": ["very devoted", "follows owner", "devoted tofamily", "bonds deeply"],
+      "weight": 1.0
+    },
+    "docile": {
+      "keywords": ["docile", "gentle", "meek", "compliant", "submissive", "manageable"],
+      "phrases": ["very docile", "easy to handle", "well behaved", "no trouble"],
+      "weight": 1.0
+    },
+    "energetic": {
+      "keywords": ["energetic", "spirited", "lively", "vivacious", "peppy", "bouncy"],
+      "phrases": ["full of energy", "very energetic", "never tires", "always ready to play"],
+      "weight": 1.0
+    },
+    "friendly": {
+      "keywords": ["friendly", "amiable", "sociable", "outgoing", "welcoming", "approachable"],
+      "phrases": ["very friendly", "loves everyone", "greets strangers", "gets along with", "good with people"],
+      "weight": 1.0
+    },
+    "gentle": {
+      "keywords": ["gentle", "mild", "tender", "soft", "kind","delicate"],
+      "phrases": ["very gentle", "gentle with children", "softmouth", "careful", "never rough"],
+      "weight": 1.0
+    },
+    "happy": {
+      "keywords": ["happy", "cheerful", "joyful", "content", "pleased", "delighted", "jolly"],
+      "phrases": ["always happy", "happy disposition", "joy tobe around", "cheerful nature"],
+      "weight": 1.0
+    },
+    "independent": {
+      "keywords": ["independent", "self-reliant", "autonomous", "self-sufficient"],
+      "phrases": ["very independent", "does own thing", "doesn't need attention", "self-reliant", "can be alone"],
+      "weight": 1.0
+    },
+    "intelligent": {
+      "keywords": ["intelligent", "smart", "bright", "clever","brilliant", "quick"],
+      "phrases": ["very intelligent", "highly intelligent", "easy to train", "learns fast", "quick learner"],
+      "weight": 1.0
+    },
+    "lazy": {
+      "keywords": ["lazy", "sluggish", "inactive", "lethargic", "idle"],
+      "phrases": ["loves to sleep", "couch potato", "low energy", "prefers rest", "not very active"],
+      "weight": 1.0
+    },
+    "lively": {
+      "keywords": ["lively", "animated", "spirited", "vibrant", "exuberant"],
+      "phrases": ["very lively", "full of life", "always active", "spirited personality"],
+      "weight": 1.0
+    },
+    "loyal": {
+      "keywords": ["loyal", "faithful", "devoted", "true", "steadfast", "dependable"],
+      "phrases": ["very loyal", "loyal companion", "loyal to family", "fiercely loyal"],
+      "weight": 1.0
+    },
+    "mischievous": {
+      "keywords": ["mischievous", "naughty", "impish", "playful", "prankish"],
+      "phrases": ["gets into trouble", "mischievous streak", "loves mischief", "bit naughty"],
+      "weight": 0.9
+    },
+    "obedient": {
+      "keywords": ["obedient", "compliant", "dutiful", "well-trained", "responsive"],
+      "phrases": ["very obedient", "follows commands", "well trained", "listens well", "eager to please"],
+      "weight": 1.0
+    },
+    "patient": {
+      "keywords": ["patient", "tolerant", "understanding", "enduring", "forbearing"],
+      "phrases": ["very patient", "good with children", "tolerates a lot", "patient nature"],
+      "weight": 1.0
+    },
+    "playful": {
+      "keywords": ["playful", "frisky", "fun-loving", "frolicsome", "sportive"],
+      "phrases": ["loves to play", "very playful", "playful nature", "always playing", "loves games"],
+      "weight": 1.0
+    },
+    "protective": {
+      "keywords": ["protective", "guarding", "defensive", "watchful", "guardian"],
+      "phrases": ["very protective", "protects family", "guarddog", "will protect", "good protector"],
+      "weight": 1.0
+    },
+    "quiet": {
+      "keywords": ["quiet", "silent", "hushed", "noiseless", "soft-spoken"],
+      "phrases": ["very quiet", "rarely barks", "not vocal", "silent type", "doesn't meow much"],
+      "weight": 1.0
+    },
+    "reserved": {
+      "keywords": ["reserved", "restrained", "withdrawn", "distant", "aloof"],
+      "phrases": ["reserved with strangers", "takes time to warm up", "not immediately friendly", "aloof at first"],
+      "weight": 1.0
+    },
+    "sensitive": {
+      "keywords": ["sensitive", "perceptive", "intuitive", "responsive", "emotional"],
+      "phrases": ["very sensitive", "picks up on emotions", "emotionally aware", "sensitive nature"],
+      "weight": 1.0
+    },
+    "shy": {
+      "keywords": ["shy", "timid", "bashful", "nervous", "hesitant"],
+      "phrases": ["very shy", "shy around strangers", "takes time", "needs patience", "can be shy"],
+      "weight": 1.0
+    },
+    "sociable": {
+      "keywords": ["sociable", "social", "gregarious", "friendly", "outgoing"],
+      "phrases": ["very sociable", "loves company", "social butterfly", "gets along with others"],
+      "weight": 1.0
+    },
+    "stubborn": {
+      "keywords": ["stubborn", "obstinate", "headstrong", "willful", "determined"],
+      "phrases": ["can be stubborn", "strong willed", "does what wants", "independent minded"],
+      "weight": 0.9
+    },
+    "sweet": {
+      "keywords": ["sweet", "kind", "gentle", "nice", "lovable", "dear"],
+      "phrases": ["very sweet", "sweet natured", "sweet disposition", "gentle soul"],
+      "weight": 1.0
+    },
+    "territorial": {
+      "keywords": ["territorial", "possessive", "defensive", "protective"],
+      "phrases": ["very territorial", "guards territory", "marks territory", "protective of space"],
+      "weight": 0.9
+    },
+    "timid": {
+      "keywords": ["timid", "fearful", "scared", "nervous", "apprehensive"],
+      "phrases": ["very timid", "easily scared", "nervous disposition", "needs gentle handling"],
+      "weight": 0.9
+    },
+    "trainable": {
+      "keywords": ["trainable", "teachable", "receptive", "responsive"],
+      "phrases": ["easy to train", "highly trainable", "learnscommands", "responds to training", "eager to learn"],
+      "weight": 1.0
+    },
+    "trusting": {
+      "keywords": ["trusting", "trustful", "naive", "unsuspecting", "innocent"],
+      "phrases": ["very trusting", "trusts everyone", "not suspicious", "friendly to all"],
+      "weight": 1.0
+    },
+    "vocal": {
+      "keywords": ["vocal", "talkative", "noisy", "loud", "barky", "meowy"],
+      "phrases": ["very vocal", "barks a lot", "meows a lot", "loves to talk", "makes noise"],
+      "weight": 1.0
+    },
+    "watchful": {
+      "keywords": ["watchful", "observant", "vigilant", "alert", "attentive"],
+      "phrases": ["always watching", "keeps watch", "observantnature", "notices everything"],
+      "weight": 1.0
+    }
+  }
+}

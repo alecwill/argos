@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "species": "cat",
+  "title": "Cat Personality Questionnaire",
+  "description": "Help us understand your cat's unique personality",
+  "questions": [
+    {
+      "id": "activity_level",
+      "text": "How active is your cat?",
+      "type": "scale",
+      "category": "energy",
+      "options": ["1 - Very lazy", "2 - Mostly relaxed", "3 - Moderate", "4 - Active", "5 - Very energetic"]
+    },
+    {
+      "id": "playfulness",
+      "text": "How playful is your cat?",
+      "type": "scale",
+      "category": "energy",
+      "options": ["1 - Rarely plays", "2 - Sometimes", "3 - Often", "4 - Very playful", "5 - Always hunting/playing"]
+    },
+    {
+      "id": "stranger_reaction",
+      "text": "How does your cat react to visitors?",
+      "type": "choice",
+      "category": "social",
+      "options": ["Very friendly", "Curious but cautious", "Hides at first, warms up", "Stays hidden", "Avoids strangers"]
+    },
+    {
+      "id": "other_cats",
+      "text": "How does your cat get along with other cats?",
+      "type": "choice",
+      "category": "social",
+      "options": ["Best friends with others", "Tolerates them","Selective", "Prefers to be alone", "Does not like other cats"]
+    },
+    {
+      "id": "lap_cat",
+      "text": "Is your cat a lap cat?",
+      "type": "choice",
+      "category": "temperament",
+      "options": ["Always wants to be on my lap", "Often sits with me", "Sometimes", "Rarely", "Never"]
+    },
+    {
+      "id": "vocalization",
+      "text": "How vocal is your cat?",
+      "type": "scale",
+      "category": "vocalization",
+      "options": ["1 - Silent type", "2 - Quiet", "3 - Average", "4 - Talkative", "5 - Very chatty"]
+    },
+    {
+      "id": "independence",
+      "text": "How independent is your cat?",
+      "type": "scale",
+      "category": "independence",
+      "options": ["1 - Very needy", "2 - Likes attention", "3 -Balanced", "4 - Independent", "5 - Very independent"]
+    },
+    {
+      "id": "curiosity",
+      "text": "How curious is your cat?",
+      "type": "scale",
+      "category": "personality",
+      "options": ["1 - Not curious", "2 - Sometimes interested", "3 - Average", "4 - Curious", "5 - Investigates everything"]
+    },
+    {
+      "id": "favorite_activities",
+      "text": "What are your cat's favorite activities?",
+      "type": "text",
+      "category": "personality"
+    },
+    {
+      "id": "favorite_spots",
+      "text": "Where does your cat like to spend time?",
+      "type": "text",
+      "category": "personality"
+    },
+    {
+      "id": "unique_quirks",
+      "text": "What unique quirks or behaviors does your cat have?",
+      "type": "text",
+      "category": "personality"
+    },
+    {
+      "id": "personality_description",
+      "text": "In your own words, describe your cat's personality:",
+      "type": "text",
+      "category": "personality"
+    }
+  ]
+}

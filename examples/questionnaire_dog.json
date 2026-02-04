@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "species": "dog",
+  "title": "Dog Personality Questionnaire",
+  "description": "Help us understand your dog's unique personality",
+  "questions": [
+    {
+      "id": "energy_level",
+      "text": "How would you describe your dog's energy level?",
+      "type": "scale",
+      "category": "energy",
+      "options": ["1 - Very Low", "2 - Low", "3 - Moderate", "4- High", "5 - Very High"]
+    },
+    {
+      "id": "playfulness",
+      "text": "How playful is your dog?",
+      "type": "scale",
+      "category": "energy",
+      "options": ["1 - Rarely plays", "2 - Sometimes", "3 - Often", "4 - Very often", "5 - Always wants to play"]
+    },
+    {
+      "id": "stranger_reaction",
+      "text": "How does your dog react to strangers?",
+      "type": "choice",
+      "category": "social",
+      "options": ["Very friendly", "Friendly after warming up","Neutral", "Shy/Reserved", "Wary/Protective"]
+    },
+    {
+      "id": "other_dogs",
+      "text": "How does your dog interact with other dogs?",
+      "type": "choice",
+      "category": "social",
+      "options": ["Loves all dogs", "Gets along well", "Selective", "Prefers to avoid", "Doesn't like other dogs"]
+    },
+    {
+      "id": "alone_time",
+      "text": "How does your dog handle being alone?",
+      "type": "choice",
+      "category": "independence",
+      "options": ["Fine alone for hours", "Okay for moderate periods", "Gets anxious after a while", "Very anxious when alone"]
+    },
+    {
+      "id": "trainability",
+      "text": "How easy is your dog to train?",
+      "type": "scale",
+      "category": "trainability",
+      "options": ["1 - Very stubborn", "2 - Needs patience", "3- Average", "4 - Learns quickly", "5 - Eager to please"]
+    },
+    {
+      "id": "vocalization",
+      "text": "How vocal is your dog?",
+      "type": "scale",
+      "category": "vocalization",
+      "options": ["1 - Rarely barks", "2 - Quiet", "3 - Average", "4 - Talkative", "5 - Very vocal"]
+    },
+    {
+      "id": "affection",
+      "text": "How affectionate is your dog?",
+      "type": "scale",
+      "category": "temperament",
+      "options": ["1 - Independent", "2 - Somewhat affectionate", "3 - Affectionate", "4 - Very affectionate", "5 - Extremely cuddly"]
+    },
+    {
+      "id": "favorite_activities",
+      "text": "What are your dog's favorite activities?",
+      "type": "text",
+      "category": "personality"
+    },
+    {
+      "id": "unique_quirks",
+      "text": "What unique quirks or behaviors does your dog have?",
+      "type": "text",
+      "category": "personality"
+    },
+    {
+      "id": "fears",
+      "text": "Does your dog have any fears or anxieties?",
+      "type": "text",
+      "category": "temperament"
+    },
+    {
+      "id": "personality_description",
+      "text": "In your own words, describe your dog's personality:",
+      "type": "text",
+      "category": "personality"
+    }
+  ]
+}

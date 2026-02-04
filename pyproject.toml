@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pet-persona-ai"
+version = "0.1.0"
+description = "AI/ML system that generates unique pet personalities and voices for cats and dogs"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Pet Persona AI Team"}
+]
+keywords = ["ai", "ml", "pets", "personality", "voice", "chatbot"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "pydantic>=2.0",
+    "sqlmodel>=0.0.14",
+    "typer>=0.9.0",
+    "rich>=13.0",
+    "httpx>=0.25.0",
+    "python-dotenv>=1.0.0",
+    "sentence-transformers>=2.2.0",
+    "faiss-cpu>=1.7.4",
+    "numpy>=1.24.0",
+    "google-api-python-client>=2.100.0",
+    "youtube-transcript-api>=0.6.0",
+]
+
+[project.optional-dependencies]
+voice = [
+    "sounddevice>=0.4.6",
+    "faster-whisper>=0.9.0",
+    "pyttsx3>=2.90",
+    "scipy>=1.10.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+all = [
+    "pet-persona-ai[voice,dev]",
+]
+
+[project.scripts]
+pet-persona = "pet_persona.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/pet-persona-ai/pet-persona-ai"
+Documentation = "https://github.com/pet-persona-ai/pet-persona-ai#readme"
+Repository = "https://github.com/pet-persona-ai/pet-persona-ai"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pet_persona = ["traits/*.json"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
